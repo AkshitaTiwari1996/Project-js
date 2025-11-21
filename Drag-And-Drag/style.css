@@ -28,4 +28,26 @@ h1{
 .board{
     display:flex;
     justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
 }
+
+.list{
+    background-color: #e3e4e8;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 30%;
+    min-height: 400px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.list h2{
+    color: #555;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+
