@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Tracker</title>
 </head>
-<link rel="stylesheet" href="style.css"> //this can be done if we type link:css
+<link rel="stylesheet" href="style.css"> <!--this can be done if we type link:css-->
 <body>
-    <div class="container">
+    <div class="container">  <!--for creating a div type .container-->
         <h1>Expense Tracker</h1>
+
+
         <div class="balance-container">
             <h2>Your Balance</h2>
             <h1 id="balance">$0.00</h1>
@@ -24,10 +26,40 @@
                     <p id="expense-amount">$0.00</p>
                 </div>
 
-
             </div>
-
         </div>
+
+
+        <div class="main-content">
+            <div class="transaction-container">
+                <h2>Transactions</h2>
+                <ul id="transaction-list">
+                    <!--Transaction will be inserted here-->
+                </ul>
+            </div>
+            <div class="form-container">
+                <h2>Add Transactions</h2>
+                <form id="transaction-form">
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <input type="text" id="description" placeholder="Enter
+                        description..." required />
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input type="number" id="amount" placeholder="Enter
+                        amount..." required />
+                        <small>Use negative (-) for expenses</small>
+                    </div>
+
+                    <button type="submit">Add Transaction</button>
+
+                </form>
+            </div>
+        </div>
+
 
     </div>
 <script src="script.js"></script>
